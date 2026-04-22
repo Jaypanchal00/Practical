@@ -26,7 +26,6 @@ html {
     color: var(--white);
 }
 
-/* Header & Navigation */
 .main-header {
     position: absolute;
     top: 30px;
@@ -129,8 +128,13 @@ html {
 }
 
 @keyframes slowZoom {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.08); }
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
 }
 
 .slide-image {
@@ -213,7 +217,6 @@ html {
     color: var(--white);
 }
 
-/* Carousel Controls */
 .carousel-control-prev,
 .carousel-control-next {
     width: 70px;
@@ -238,7 +241,6 @@ html {
     background: var(--brand-orange);
 }
 
-/* Responsiveness */
 @media (max-width: 1200px) {
     .hero-text h1 {
         font-size: 38px;
@@ -274,16 +276,19 @@ html {
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+
     .info-wrapper {
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
     }
+
     .info-wrapper span {
         font-size: 11px;
         text-align: center;
         line-height: 1.4;
     }
+
     .separator {
         display: none;
     }
@@ -433,13 +438,13 @@ html {
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     height: 100%;
     min-height: 60px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     cursor: default;
 }
 
 .milestone-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
 .milestone-card.filled {
@@ -472,12 +477,10 @@ html {
     object-fit: contain;
 }
 
-/* Filled Card: White Circle, Orange Arrow */
 .milestone-card.filled .m-icon-circle {
     background-color: #ffffff;
 }
 
-/* Outline Card: Orange Circle, White Arrow */
 .milestone-card.outline .m-icon-circle {
     background-color: var(--brand-orange);
 }
@@ -497,7 +500,6 @@ html {
     line-height: 1.2;
 }
 
-/* Milestones Responsiveness */
 @media (max-width: 1200px) {
     .milestones-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -508,7 +510,6 @@ html {
     }
 }
 
-/* Products Section Styles */
 .products-section {
     background-color: var(--white);
 }
@@ -581,7 +582,6 @@ html {
     margin-bottom: 0;
 }
 
-/* Responsiveness Updates */
 @media (max-width: 991px) {
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -628,7 +628,6 @@ html {
     }
 }
 
-/* Certificates Section Styles */
 .certificates-section {
     background-color: #EFEFEF;
     padding: 40px 15px;
@@ -725,7 +724,7 @@ html {
     letter-spacing: 1px;
 }
 
-/* Certificates Responsiveness */
+
 @media (max-width: 1200px) {
     .cert-card {
         height: 90px;
